@@ -21,7 +21,7 @@ function handleSubmit() {
     document.querySelector('.loader').style.display = 'block';
 
 
-    fetch(`http://127.0.0.1:5000/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
+    fetch(`http://heartapi.herokuapp.com/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
       .then(res => res.json())
       .then(data => {
         prediction = parseFloat(data['probability'][0][1]).toFixed(5);
