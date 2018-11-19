@@ -33,6 +33,7 @@ function handleSubmit() {
       })
       .catch(err => {
         console.log(err)
+        document.querySelector('.loader').style.display = 'none';
         document.querySelector('.clearfix').innerHTML = `
         <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
       `
