@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Heart Disease Prediction</title>
+		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/loader.css" type="text/css">
+		<link rel="stylesheet" href="css/test.css" type="text/css">
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="nl-blurred">
+		<div class="frame">
+			<div class="center">
+				<div class="dot-1"></div>
+				<div class="dot-2"></div>
+				<div class="dot-3"></div>
+			</div>
+		</div>
+
+		<div class="container demo-1">
+
+			<header>
+				<h1>Heart Disease Prediction<span>using Machine Learning</span></h1>	
+			</header>
+			<div class="loader">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				  </div>
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form" onsubmit="return false">
+					I am a <input type="number" placeholder="20" value="20" id="age"/> year old
+					<select id="sex">
+						<option value="0" selected>Male</option>
+						<option value="1">Female</option>
+					</select>.
+					I smoke <input type="number" placeholder="2" value="2" id="cigs"> cigarettes daily. I 
+					<select id="diabetes">
+						<option value="1">have</option>
+						<option value="2">don't have</option>
+					</select> diabetes.
+					My cholestrol level is <input type="number" value="100" placeholder="100" id="cholestrol"> and
+					my blood pressure is <input type="number" id="sBP" value="120" placeholder="120">/
+					<input type="number" value="80" placeholder="80" id="dBP">.
+					I have a resting heart rate of <input type="number" id="heartRate" value="75" placeholder="75"> and my blood sugar level is 
+					<input type="number" placeholder="80" id="glucose" value="80">.
+		
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit" id="btn">Submit</button>
+					</div>
+
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+
+		</div><!-- /container -->
+		<script>
+			document.querySelector('.container').style.display = 'none';
+			document.querySelector('.loader').style.display = 'none';
+			setTimeout(() => {
+				document.querySelector('.frame').style.display = 'none';
+				document.querySelector('.container').style.display = 'block';
+			}, 3800);
+		</script>
+		<script src="js/nlform.js"></script>
+		<script src="./js/custom.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
+</html>
