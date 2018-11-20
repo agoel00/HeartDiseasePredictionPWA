@@ -13,7 +13,7 @@
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
+body, html { font-size: 90%; padding: 0; margin: 0;}
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
@@ -26,6 +26,8 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 }
+
+
 
 a {
 	color: #888;
@@ -59,7 +61,7 @@ a:active {
 .container > header span {
 	display: block;
 	font-size: 60%;
-	color: #b14943;
+	color: #694050;
 	padding: 0 0 0.6em 0.1em;
 }
 
