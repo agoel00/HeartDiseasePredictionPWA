@@ -2,7 +2,7 @@
 var CACHE_NAME = 'heart-v1';
 //new
 var urlsToCache = [
-  '/',
+  'index.html',
   'css/component.css',
   'css/default.css',
   'css/loader.css',
