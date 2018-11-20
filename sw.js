@@ -3,24 +3,24 @@ var CACHE_NAME = 'heart-v1';
 //new
 var urlsToCache = [
   'index.html',
-  'HeartDiseasePredictionPWA/css/component.css',
-  'HeartDiseasePredictionPWA/css/default.css',
-  'HeartDiseasePredictionPWA/css/loader.css',
-  'HeartDiseasePredictionPWA/css/test.css',
-  'HeartDiseasePredictionPWA/js/custom.js',
-  'HeartDiseasePredictionPWA/js/nlform.js',
-  'HeartDiseasePredictionPWA/js/modernizr.custom.js',
-  'HeartDiseasePredictionPWA/manifest.json',
-  'HeartDiseasePredictionPWA/favicon.ico',
-  'HeartDiseasePredictionPWA/fonts/nlicons/nlicons.dev.svg',
-  'HeartDiseasePredictionPWA/fonts/nlicons/nlicons.eot',
-  'HeartDiseasePredictionPWA/fonts/nlicons/nlicons.svg',
-  'HeartDiseasePredictionPWA/fonts/nlicons/nlicons.ttf',
-  'HeartDiseasePredictionPWA/fonts/nlicons/nlicons.woff',
-  'HeartDiseasePredictionPWA/fonts/codropsicons/codropsicons.eot',
-  'HeartDiseasePredictionPWA/fonts/codropsicons/codropsicons.svg',
-  'HeartDiseasePredictionPWA/fonts/codropsicons/codropsicons.ttf',
-  'HeartDiseasePredictionPWA/fonts/codropsicons/codropsicons.woff'
+  '/css/component.css',
+  '/css/default.css',
+  '/css/loader.css',
+  '/css/test.css',
+  '/js/custom.js',
+  '/js/nlform.js',
+  '/js/modernizr.custom.js',
+  '/manifest.json',
+  '/favicon.ico',
+  '/fonts/nlicons/nlicons.dev.svg',
+  '/fonts/nlicons/nlicons.eot',
+  '/fonts/nlicons/nlicons.svg',
+  '/fonts/nlicons/nlicons.ttf',
+  '/fonts/nlicons/nlicons.woff',
+  '/fonts/codropsicons/codropsicons.eot',
+  '/fonts/codropsicons/codropsicons.svg',
+  '/fonts/codropsicons/codropsicons.ttf',
+  '/fonts/codropsicons/codropsicons.woff'
 ];
 
 
