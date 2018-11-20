@@ -42,7 +42,14 @@ self.addEventListener('install', function (event) {
 self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+      console.log('SW fetching resource: '+event.request.url)
+      return response || fetch(event.request).then(function(response) {
+        return caches.open(CACHE_NAME).then(function(cache) {
+          console.log('SW caching new resource: '+event.request.url);
+          cache.put(event.request, response.clone());
+          return response;
+        })
+      });
 
     })
     .catch(err => console.log(err))
