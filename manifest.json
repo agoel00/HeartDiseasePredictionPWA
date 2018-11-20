@@ -4,8 +4,8 @@
     "theme_color": "#e96d65",
     "background_color": "#e96d65",
     "display": "fullscreen",
-    "Scope": "/",
-    "start_url": "/",
+    "Scope": "/HeartDiseasePredictionPWA",
+    "start_url": "/HeartDiseasePredictionPWA",
     "icons": [
       {
         "src": "images/icons/icon-72x72.png",

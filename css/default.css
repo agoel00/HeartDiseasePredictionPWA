@@ -65,7 +65,7 @@ a:active {
 
 /* Main Content */
 .main {
-	max-width: 50em;
+	max-width: 65em;
 }
 
 /* To Navigation Style */
@@ -139,3 +139,9 @@ a:active {
 	}
 
 }
+
+/* * {
+	background: #000 !important;
+	color: #0f0 !important;
+	outline: solid #f00 1px !important;
+} */
