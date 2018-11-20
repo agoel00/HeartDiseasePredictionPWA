@@ -1,5 +1,5 @@
 body{
-    background-color:#E56262;
+    background-color:#E96D65;
  }
  .frame {
    position: absolute;
@@ -10,7 +10,7 @@ body{
    margin-top: -200px;
    margin-left: -200px;
    border-radius: 2px;
-   background: #E56262;
+   background: #E96D65;
    color: #fff;
  }
  
