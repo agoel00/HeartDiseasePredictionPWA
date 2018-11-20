@@ -13,6 +13,17 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" href="css/loader.css" type="text/css">
 		<link rel="stylesheet" href="css/test.css" type="text/css">
+		<link rel="manifest" href="./manifest.json">
+
+		<!-- Add to home screen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Heartify">
+		<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+		<!-- Tile icon for Windows -->
+		<meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+		<meta name="msapplication-TileColor" content="#E96D65">
+
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body class="nl-blurred">
@@ -71,7 +82,7 @@
 					</select> diabetes.
 					My cholestrol level is <input type="number" value="100" placeholder="100" id="cholestrol"> and
 					my blood pressure is <input type="number" id="sBP" value="120" placeholder="120">/<input type="number" value="80" placeholder="80" id="dBP">.
-					I have a resting heart rate of <input type="number" id="heartRate" value="75" placeholder="75"> and my blood sugar level is 
+					I have a heart rate of about <input type="number" id="heartRate" value="75" placeholder="75"> and my blood sugar level is 
 					<input type="number" placeholder="80" id="glucose" value="80">.
 		
 					<div class="nl-submit-wrap">

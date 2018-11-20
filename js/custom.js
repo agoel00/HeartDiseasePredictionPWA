@@ -20,39 +20,40 @@ function handleSubmit(e) {
     document.querySelector('.loader').style.display = 'block';
 
 
-    fetch(`https://heartapi.herokuapp.com/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
-      .then(res => res.json())
-      .then(data => {
-        prediction = parseFloat(data['probability'][0][1]).toFixed(5);
-        console.log(prediction)
-        document.querySelector('.loader').style.display = 'none';
-        document.querySelector('.clearfix').innerHTML = `
-          <p class="nl-form"> Predicted probability of having a coronary heart disease is ${prediction}</p>
+    // fetch(`http://127.0.0.1:5000/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     prediction = parseFloat(data['probability'][0][1]).toFixed(5);
+    //     console.log(prediction)
+    //     document.querySelector('.loader').style.display = 'none';
+    //     document.querySelector('.clearfix').innerHTML = `
+    //       <p class="nl-form"> Predicted probability of having a coronary heart disease is ${prediction}</p>
+    //     `
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //     document.querySelector('.loader').style.display = 'none';
+    //     document.querySelector('.clearfix').innerHTML = `
+    //     <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
+    //   `
+    //   })
+      setTimeout(() => {
+        fetch(`https://heartapi.herokuapp.com/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
+        .then(res => res.json())
+        .then(data => {
+          prediction = parseFloat(data['probability'][0][1]).toFixed(5);
+          console.log(prediction)
+          document.querySelector('.loader').style.display = 'none';
+          document.querySelector('.clearfix').innerHTML = `
+            <p class="nl-form"> Predicted probability of having a coronary heart disease is ${prediction}</p>
+          `
+        })
+        .catch(err => {
+          console.log(err)
+             document.querySelector('loader').style.display = 'none'; 
+          document.querySelector('.clearfix').innerHTML = `
+          <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
         `
-      })
-      .catch(err => {
-        console.log(err)
-        document.querySelector('.loader').style.display = 'none';
-        document.querySelector('.clearfix').innerHTML = `
-        <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
-      `
-      })
-      // setTimeout(() => {
-      //   fetch(`http://127.0.0.1:5000/predict?age=${age}&sex=${sex}&cigs=${cigs}&chol=${cholestrol}&sBP=${sBP}&dia=${diabetes}&dBP=${dBP}&gluc=${glucose}&hRate=${heartRate}`)
-      //   .then(res => res.json())
-      //   .then(data => {
-      //     prediction = parseFloat(data['probability'][0][1]).toFixed(5);
-      //     console.log(prediction)
-      //     document.querySelector('.loader').style.display = 'none';
-      //     document.querySelector('.clearfix').innerHTML = `
-      //       <p class="nl-form"> Predicted probability of having a coronary heart disease is ${prediction}</p>
-      //     `
-      //   })
-      //   .catch(err => {
-      //     console.log(err)
-      //     document.querySelector('.clearfix').innerHTML = `
-      //     <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
-      //   `
-      //   })
-      // }, 3000);
+        })
+      }, 300);
 }
