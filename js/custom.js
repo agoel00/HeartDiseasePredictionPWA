@@ -1,3 +1,5 @@
+document.addEventListener('touchstart', {passive: true});
+
 var btn = document.querySelector('#btn')
 
 btn.addEventListener('click', handleSubmit)
@@ -50,7 +52,7 @@ function handleSubmit(e) {
         })
         .catch(err => {
           console.log(err)
-             document.querySelector('loader').style.display = 'none'; 
+             document.querySelector('.loader').style.display = 'none'; 
           document.querySelector('.clearfix').innerHTML = `
           <p class="nl-form"> Sorry, some error occurred while processing your request. </p>
         `

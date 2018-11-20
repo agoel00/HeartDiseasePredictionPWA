@@ -7,7 +7,7 @@
 		<title>Heart Disease Prediction</title>
 		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
 		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
-		<meta name="author" content="Codrops" />
+		<meta name="theme-color" content="#E96D65">
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -24,7 +24,6 @@
 		<meta name="msapplication-TileImage" content="icons/icon-144x144.png">
 		<meta name="msapplication-TileColor" content="#E96D65">
 
-		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body class="nl-blurred">
 		<div class="frame">
@@ -99,6 +98,20 @@
 			<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/MorphingDevices/"><span>Previous Demo</span></a>
 			<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=15139"><span>Back to the Codrops Article</span></a></span>
 		</div> -->
+		<script src="js/modernizr.custom.js"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', function() {
+					navigator.serviceWorker.register('/sw.js').then(function(registration) {
+					// Registration was successful
+					console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					}, function(err) {
+					// registration failed :(
+					console.log('ServiceWorker registration failed: ', err);
+					});
+				});
+			}
+		</script>
 		<script>
 			document.querySelector('.container').style.display = 'none';
 			document.querySelector('.loader').style.display = 'none';
