@@ -276,10 +276,20 @@ input:focus::-ms-input-placeholder {
 	.nl-form {
 		font-size: 3em;
 	}
+	body {
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+	}
 }
 
 @media screen and (max-width: 25em) {
 	.nl-form {
 		font-size: 2em;
+	}
+	body {
+		-webkit-user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
 	}
 }

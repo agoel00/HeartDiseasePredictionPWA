@@ -3,7 +3,7 @@
     "short_name": "Heartify",
     "theme_color": "#e96d65",
     "background_color": "#e96d65",
-    "display": "fullscreen",
+    "display": "standalone",
     "Scope": "/HeartDiseasePredictionPWA",
     "start_url": "/HeartDiseasePredictionPWA",
     "icons": [
