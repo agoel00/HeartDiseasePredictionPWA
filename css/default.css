@@ -25,6 +25,7 @@ body {
 	background: #E96D65;
 	font-weight: 300;
 	overflow-x: hidden;
+	overscroll-behavior-y: contain;
 }
 
 
