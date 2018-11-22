@@ -26,6 +26,10 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 	overscroll-behavior-y: contain;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 

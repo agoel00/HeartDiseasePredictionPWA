@@ -1,4 +1,7 @@
 document.addEventListener('touchstart', {passive: true});
+document.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+});
 
 var btn = document.querySelector('#btn')
 
