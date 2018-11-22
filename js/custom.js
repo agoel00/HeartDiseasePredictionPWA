@@ -2,6 +2,11 @@ document.addEventListener('touchstart', {passive: true});
 document.addEventListener('contextmenu', (e) => {
   e.preventDefault();
 });
+document.addEventListener('touchmove', (e) => {
+  if (e.scale !== 1) {
+    e.preventDefault();
+  }
+}, false);
 
 var btn = document.querySelector('#btn')
 
