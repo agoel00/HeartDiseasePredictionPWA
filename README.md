@@ -1,6 +1,6 @@
 # Heartify
 ## Heart Disease Prediction PWA
-
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 <img src="mockup.png">
 
 #
