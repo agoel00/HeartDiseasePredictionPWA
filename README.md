@@ -1,7 +1,7 @@
 # Heartify
 ## Heart Disease Prediction PWA
 
-[](mockup.png)
+<img src="mockup.png">
 
 #
 
