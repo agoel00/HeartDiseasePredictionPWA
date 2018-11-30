@@ -1,6 +1,10 @@
 # Heartify
 ## Heart Disease Prediction PWA
 
+[](mockup.png)
+
+#
+
 [Live](https://heartify.netlify.com)
 
 <center>
