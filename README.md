@@ -1,6 +1,11 @@
 # Heartify
 ## Heart Disease Prediction PWA
-![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+
+![License](https://badgen.net/badge/license/MIT/blue)
+![status](https://badgen.net/uptime-robot/status/m781547257-02e85bf091a6cde871b002fe)
+![uptime](https://badgen.net/uptime-robot/day/m781547257-02e85bf091a6cde871b002fe)
+![response](https://badgen.net/uptime-robot/response/m781547257-02e85bf091a6cde871b002fe)
+
 <img src="mockup.png">
 
 #
