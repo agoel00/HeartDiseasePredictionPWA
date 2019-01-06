@@ -7,7 +7,7 @@
 
 ## Heart Disease Prediction PWA
 
-<img src="mockup.png">
+<img src="device-mockup.png">
 
 #
 
