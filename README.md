@@ -11,7 +11,7 @@
 
 #
 
-[Live](https://heartify.netlify.com)
+[Live](https://heartify.anmolgoel.com)
 
 <center>
 	<img src="demo.gif" height="450" width="250">
